@@ -26,7 +26,7 @@ public class DougControllerTest {
 
 	@Test
 	public void testIndex() throws Exception{
-		mockMvc.perform(get("/mydoug"))
+		mockMvc.perform(get("/doug"))
 				  .andExpect(status().isOk())
 				  .andExpect(view().name("doug"));
 	}
